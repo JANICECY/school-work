@@ -1,1 +1,26 @@
-<p>detail works!</p>
+<div id='grid-container'>
+    <div id='nav-section'>
+        <span *ngFor="let item of myclasses; let i=index">
+            <button (click)="onClickCourseCode(i)">{{item.courseCode}}</button>
+        </span>
+    </div>
+    <div id='left-part'>
+        <p>Course Code:</p>
+        {{selectedCourse.courseCode}}
+    </div>
+    <div id='right-part'>
+        <div>
+            <p>Course Title: </p>
+            {{selectedCourse.courseTitle}}
+        </div>
+        <div>
+            <p>Day of Week: </p>
+            {{selectedCourse.dayOfWeek}}
+        </div>
+        <div>
+            <p>Professor Name: </p>
+            {{selectedCourse.profName}}
+        </div>
+        
+    </div>
+</div>

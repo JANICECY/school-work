@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
     name: 'Ying Chen',
     loginName: 'yingch',
     campus: 'Davis',
-    picture: '',
+    picture: '../../assets/images/pic.jpg',
     assignmentTitle: 'Assignment3'
   }
   constructor() { }

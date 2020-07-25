@@ -1,0 +1,10 @@
+#app-wrapper {
+    background-color: #555555;
+    font-family: sans-serif;
+}
+
+
+#img-wrapper {
+    display: flex;
+    justify-content: center;
+}
