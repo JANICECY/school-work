@@ -12,7 +12,7 @@ export class AppComponent {
     name: 'Ying Chen',
     loginName: 'yingch',
     campus: 'Davis',
-    picture: '/assets/images/pic.jpg',
+    picture: 'assets/images/pic.jpg',
     assignmentTitle: 'Assignment3'
   }
 }
