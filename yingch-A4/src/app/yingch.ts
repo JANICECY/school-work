@@ -3,6 +3,5 @@ export default class YingCh {
     name: String;
     loginName: String;
     campus: String;
-    picture: String;
     assignmentTitle: String;
 }
