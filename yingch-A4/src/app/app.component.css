@@ -2,3 +2,14 @@
     background-color: #555555;
     font-family: sans-serif;
 }
+
+#content-wrapper {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }

@@ -5,5 +5,5 @@ export const yingch: YingCh = {
     name: 'Ying Chen',
     loginName: 'yingch',
     campus: 'Davis',
-    assignmentTitle: 'Assignment3'
+    assignmentTitle: 'Assignment4'
   }
