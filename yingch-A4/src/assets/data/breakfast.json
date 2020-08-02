@@ -1,0 +1,7 @@
+{
+    "items": [
+        { "name": "Cinnamon Baked Doughnuts", "price": "2.99", "calories": "140" },
+        { "name": "Pancakes", "price": "6.99", "calories": "360" },
+        { "name": "Avocado Toasts", "price": "5.99", "calories": "450" }
+    ]
+}

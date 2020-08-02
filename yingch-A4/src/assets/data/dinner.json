@@ -1,0 +1,7 @@
+{
+    "items": [
+        { "name": "Chicken Gumbo", "price": "12.99", "calories": "350" },
+        { "name": "Tomato Soup & Grilled Cheese", "price": "12.99", "calories": "350" },
+        { "name": "Roast Turkey", "price": "25.99", "calories": "780" }
+    ]
+}
