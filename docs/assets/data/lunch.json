@@ -1,0 +1,7 @@
+{
+    "items": [
+        { "name": "Pizza", "price": "8.99", "calories": "550" },
+        { "name": "Cheese steak sandwich", "price": "7.99", "calories": "550" },
+        { "name": "Roast beef hoagie", "price": "9.99", "calories": "600" }
+    ]
+}
