@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PersonlddataService } from './personlddata.service'
 import Yingch from './yingch'
 import { Food } from './Food'
-import breakfast from '../assets/data/breakfast.json'
-import lunch from '../assets/data/lunch.json'
-import dinner from '../assets/data/dinner.json'
+
 
 
 @Component({
@@ -15,9 +13,9 @@ import dinner from '../assets/data/dinner.json'
 export class AppComponent implements OnInit {
   title = 'yingch-A4';
   yingch: Yingch;
-  breakfastList: Food[] = breakfast.items;
-  lunchList: Food[] = lunch.items;
-  dinnerList: Food[] = dinner.items;
+  breakfastList: Food[];
+  lunchList: Food[]
+  dinnerList: Food[];
   
 
   constructor(private myService: PersonlddataService) {
@@ -25,9 +23,17 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.loadData();
+    this.loadMenus();
   }
 
   loadData(): void {
     this.yingch = this.myService.loadData()
+  }
+
+  loadMenus():void {
+    const { breakfast, lunch, dinner } = this.myService.loadMenus()
+    this.breakfastList = breakfast;
+    this.lunchList = lunch;
+    this.dinnerList = dinner
   }
 }
