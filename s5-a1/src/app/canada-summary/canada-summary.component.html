@@ -1,0 +1,31 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar>
+    <ion-title>
+      Canada Summary
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="key-updates">
+  <ion-header collapse="condense" >
+    <ion-toolbar>
+      <ion-title size="middle">Canada Summary</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header class="key-updates">
+      <ion-card-subtitle class="key-updates" style="font-size: 110%;">COVID-19 KEY UPDATES</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content class="key-updates">
+      <table>
+        <tr *ngFor="let item of keyUpdates | keyvalue">
+          <b>{{item.key}}</b>: {{item.value}}
+        </tr>
+        <br/>
+        <tr>Data abtained from Government of Canada at 2/4/2021, 10:21:18 PM
+      </table>
+    </ion-card-content>
+  </ion-card>
+  <app-ontario-cases></app-ontario-cases>
+</ion-content>

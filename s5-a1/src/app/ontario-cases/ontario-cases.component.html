@@ -1,0 +1,15 @@
+<ion-card>
+  <ion-card-header class="cases-container">
+    <ion-card-subtitle style="color: black; font-size: 110%;">ONTARIO STATUES OF CASES</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content class="cases-container">
+    <table>
+      <tr *ngFor="let item of statusOfCases | keyvalue">
+        <b>{{item.key}}</b>: {{item.value}}
+      </tr>
+      <br />
+      <tr>Data abtained from ontario.ca at 2/4/2021, 10:21:18 PM
+    </table>
+  </ion-card-content>
+</ion-card>

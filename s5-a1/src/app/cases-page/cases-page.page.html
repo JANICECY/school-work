@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="font-weight: bold;">
+      Status of COVID-19 cases in Ontario
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button [text]="buttonText" [icon]="buttonIcon">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="small" style="font-weight: bold;">Status of COVID-19 cases in Ontario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <app-ontario-cases></app-ontario-cases>
+
+  <ion-card class="report">
+    <ion-card-content>
+      <table>
+        <th>Repoort Data</th>
+        <th>{{report[1]}}</th>
+        <tr>
+          <th>Region</th>
+          <th>{{report[2]}}</th>
+        </tr>
+
+        <tr>
+          <th>Institution</th>
+          <th>{{report[3]}}</th>
+        </tr>
+
+        <tr>
+          <th>Total Active Inmate Cases</th>
+          <th>{{report[4]}}</th>
+        </tr>
+
+        <tr>
+          <th>Cumulative Resolved Inmate Cases</th>
+          <th>{{report[5]}}</th>
+        </tr>
+      </table>
+      Data abtained from <a href="https://data.ontario.ca/dataset?keywords_en=COVID-19" style="color: antiquewhite;" target="_blank">Link</a> at 2/4/2021, 10:21:18 PM
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-input [(ngModel)]="message"></ion-input>
+      <ion-button color='medium' (click)="newMessage()">Send Message</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

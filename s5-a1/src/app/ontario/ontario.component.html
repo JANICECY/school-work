@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ontario
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="key-updates">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="middle">Ontario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-ontario-cases></app-ontario-cases>
+
+  <ion-card>
+    <ion-card-header class="selection-container">
+      <ion-card-subtitle class="selection-container">Messages</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list *ngFor="let i of messages;">
+        <ion-item style="color: gray;">{{i.date}} {{i.message}}</ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header class="selection-container">
+      <ion-card-subtitle class="selection-container">Status of COVID-19 cases in Ontario’s Provincial Correctional
+        Institutions</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-list *ngFor="let item of selections">
+        <ion-item><a [routerLink]="['/cases-page', { report:item }]" routerLinkActive="active">{{item[1]}}</a></ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
